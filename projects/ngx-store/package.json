@@ -1,0 +1,7 @@
+{
+  "name": "ngx-store",
+  "version": "3.0.0",
+  "peerDependencies": {
+    "@angular/core": ">= 9.0.0"
+  }
+}
