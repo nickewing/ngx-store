@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 import { delay, filter } from 'rxjs/operators';
 import { NgxStorageEvent } from '../utility/storage/storage-event';
 import { Resource } from './resource';
-const merge = require('lodash.merge');
+import  merge from 'lodash.merge';
 
 export abstract class WebStorageService {
     public static keys: Array<string> = [];

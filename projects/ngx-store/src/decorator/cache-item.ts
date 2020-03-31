@@ -1,10 +1,9 @@
+import { Cache } from './cache';
+import { DecoratorConfig } from '../ngx-store.types';
 import { WebStorageServiceInterface } from '../service';
 import { WebStorageUtility } from '../utility/webstorage.utility';
-import { Config, debug } from '../config/index';
-import { DecoratorConfig } from '../ngx-store.types';
-import { Cache } from './cache';
-
-const isEqual = require('lodash.isequal');
+import { debug, Config } from '../config/config';
+import isEqual from 'lodash.isequal';
 
 export interface CacheItemInterface {
     key: string;

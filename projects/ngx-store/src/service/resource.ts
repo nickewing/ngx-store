@@ -1,8 +1,8 @@
 import { WebStorageService } from './webstorage.service';
 import { Config } from '../config/config';
-const _get = require('lodash.get');
-const _set = require('lodash.set');
-const _merge = require('lodash.merge');
+import _get from 'lodash.get';
+import _set from 'lodash.set';
+import _merge from 'lodash.merge';
 
 export class Resource<T> {
     protected _defaultValue: any = null;

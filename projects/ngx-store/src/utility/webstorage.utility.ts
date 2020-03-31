@@ -1,10 +1,11 @@
 import { DecoratorConfig } from '../ngx-store.types';
 import { WebStorage } from './storage/cookies-storage';
 import { Cache } from '../decorator/cache';
-import { CONFIG_PREFIX, debug } from '../config/index';
+
 import { Subject } from 'rxjs';
 import { NgxStorageEvent } from './storage/storage-event';
 import { Observable } from 'rxjs';
+import { CONFIG_PREFIX, debug } from '../config/config';
 export type StorageName = 'localStorage' | 'sessionStorage' | 'cookiesStorage' | 'sharedStorage';
 
 export class WebStorageUtility {
