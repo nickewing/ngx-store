@@ -3,5 +3,12 @@
   "dest": "../../dist/ngx-store",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "whitelistedNonPeerDependencies": [
+    "lodash.get",
+    "lodash.isequal",
+    "lodash.merge",
+    "lodash.set",
+    "ts-debug"
+  ]
 }

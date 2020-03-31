@@ -1,9 +1,16 @@
 {
-  "name": "ngx-store",
-  "version": "3.0.0",
-  "peerDependencies": {
-    "@angular/common": "^9.0.7",
-    "@angular/core": "^9.0.7",
-    "tslib": "^1.10.0"
-  }
+    "name": "ngx-store",
+    "version": "3.0.0",
+    "peerDependencies": {
+        "@angular/common": "^9.0.7",
+        "@angular/core": "^9.0.7",
+        "tslib": "^1.10.0"
+    },
+    "dependencies": {
+        "lodash.get": "^4.4.2",
+        "lodash.isequal": "^4.5.0",
+        "lodash.merge": "^4.6.2",
+        "lodash.set": "^4.3.2",
+        "ts-debug": "^1.3.0"
+    }
 }
