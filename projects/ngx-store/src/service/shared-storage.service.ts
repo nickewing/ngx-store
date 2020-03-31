@@ -1,9 +1,10 @@
 import { WebStorageService } from './webstorage.service';
 import { sharedStorageUtility } from '../utility/index';
 import { Injectable } from '@angular/core';
-import { sharedStorage } from '../utility/storage/shared-storage';
 
-@Injectable()
+@Injectable({
+  providedIn: "root"
+})
 export class SharedStorageService extends WebStorageService {
     public static keys: Array<string> = [];
 

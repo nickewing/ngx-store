@@ -4,7 +4,9 @@ import { cookiesStorageUtility } from '../utility/index';
 import { merge } from 'rxjs';
 import { Injectable } from '@angular/core';
 
-@Injectable()
+@Injectable({
+  providedIn: "root"
+})
 export class CookiesStorageService extends WebStorageService {
     public static keys: Array<string> = [];
 

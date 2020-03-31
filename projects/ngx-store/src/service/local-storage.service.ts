@@ -5,7 +5,9 @@ import { fromEvent, merge } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
 import { NgxStorageEvent } from '../utility/storage/storage-event';
 
-@Injectable()
+@Injectable({
+  providedIn: "root"
+})
 export class LocalStorageService extends WebStorageService {
     public static keys: Array<string> = [];
 

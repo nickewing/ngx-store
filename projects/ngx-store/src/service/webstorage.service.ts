@@ -1,4 +1,3 @@
-import { debug, ClearType, Config, WebStorageConfigInterface } from '../config/index';
 import { WebStorageUtility } from '../utility/webstorage.utility';
 import { WebStorageServiceInterface } from './webstorage.interface';
 import { Cache } from '../decorator/cache';
@@ -6,6 +5,8 @@ import { Observable } from 'rxjs';
 import { delay, filter } from 'rxjs/operators';
 import { NgxStorageEvent } from '../utility/storage/storage-event';
 import { Resource } from './resource';
+import { WebStorageConfigInterface, ClearType } from '../config/config.interface';
+import { Config, debug } from '../config/config';
 import  merge from 'lodash.merge';
 
 export abstract class WebStorageService {
