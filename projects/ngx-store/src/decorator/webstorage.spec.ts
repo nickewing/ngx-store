@@ -1,13 +1,10 @@
 import { inject, TestBed } from '@angular/core/testing';
-import { WebStorageModule } from '../../src/ngx-store';
-import { CookieStorage, LocalStorage, SessionStorage, SharedStorage } from '../../src/decorator/webstorage';
-import {
-    CookiesStorageService,
-    LocalStorageService,
-    SessionStorageService,
-    SharedStorageService
-} from '../../src/service';
-import { WebstorableArray, WebstorableObject } from '../../src/ngx-store.types';
+import { LocalStorage, SessionStorage, CookieStorage, SharedStorage } from './webstorage';
+import { LocalStorageService } from '../service/local-storage.service';
+import { SessionStorageService } from '../service/session-storage.service';
+import { CookiesStorageService } from '../service/cookies-storage.service';
+import { SharedStorageService } from '../service/shared-storage.service';
+import { WebStorageModule, WebstorableObject, WebstorableArray } from '../ngx-store';
 
 sessionStorage.setItem('ngx_twoDecorators', '128');
 class TestClass {

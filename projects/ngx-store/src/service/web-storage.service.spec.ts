@@ -1,10 +1,11 @@
-import { inject, TestBed } from '@angular/core/testing';
-import { LocalStorageService } from '../../ngx-store';
-import {
-    CookiesStorageService, SessionStorageService, SharedStorageService,
-    WebStorageService
-} from '../../src/service';
+import { TestBed, inject } from '@angular/core/testing';
 import { entries, fillWithData } from './web-storage.utils';
+
+import { CookiesStorageService } from './cookies-storage.service';
+import { LocalStorageService } from './local-storage.service';
+import { SessionStorageService } from './session-storage.service';
+import { SharedStorageService } from './shared-storage.service';
+import { WebStorageService } from './webstorage.service';
 
 // Test common methods of WebStorageService children classes
 test(LocalStorageService);

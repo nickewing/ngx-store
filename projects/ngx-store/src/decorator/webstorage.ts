@@ -69,6 +69,7 @@ function WebStorage(
                 cacheItem.currentTarget = target;
                 cacheItem.saveValue(value, config);
             },
+            configurable: true
         });
         return target;
     };
