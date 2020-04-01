@@ -5,7 +5,8 @@ import { Cache } from '../decorator/cache';
 import { Subject } from 'rxjs';
 import { NgxStorageEvent } from './storage/storage-event';
 import { Observable } from 'rxjs';
-import { CONFIG_PREFIX, debug } from '../config/config';
+import { debug } from '../config/config';
+import { CONFIG_PREFIX } from '../config/config.helper';
 export type StorageName = 'localStorage' | 'sessionStorage' | 'cookiesStorage' | 'sharedStorage';
 
 export class WebStorageUtility {

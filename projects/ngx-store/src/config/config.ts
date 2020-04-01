@@ -6,8 +6,6 @@ import { Debugger } from 'ts-debug';
 // TODO check if NGXSTORE_CONFIG implements WebStorageConfigInterface
 // TODO allow to set configuration in node-config (`config` on npm)
 
-export { CONFIG_PREFIX } from './config.helper';
-
 const DefaultConfig: WebStorageConfigInterface = {
     prefix: 'ngx_',
     previousPrefix: 'angular2ws_',
@@ -22,7 +20,7 @@ const DefaultConfig: WebStorageConfigInterface = {
 declare const NGXSTORE_CONFIG: WebStorageConfigInterface;
 
 let ConfigFills: WebStorageConfigInterface = {};
-const localStoragePrefix = ConfigHelper.getItem('prefix');
+const localStoragePrefix = ConfigHelper.getPrefix();
 
 if (typeof NGXSTORE_CONFIG === 'object') {
     ConfigFills = Object.assign({}, NGXSTORE_CONFIG);
@@ -39,4 +37,4 @@ export const Config: WebStorageConfigInterface =
     Object.assign({}, DefaultConfig, ConfigFills);
 
 export const debug = new Debugger(console, Config.debugMode, '[ngx-store] ');
-ConfigHelper.setItem('prefix', Config.prefix);
+ConfigHelper.setPrefix(Config.prefix);
