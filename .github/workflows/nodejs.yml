@@ -15,6 +15,6 @@ jobs:
     - run: |
         npm install
         npm run build-prod
-    - run: npm publish
+    - run: npm publish dist/ngx-store/
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
