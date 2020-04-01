@@ -1,5 +1,5 @@
 {
-    "name": "@jan-moxter/ngx-store",
+    "name": "ngx-store",
     "version": "3.0.0",
     "peerDependencies": {
         "@angular/common": "^9.0.7",
