@@ -3,7 +3,7 @@ import {
   sessionStorageUtility,
   cookiesStorageUtility,
   sharedStorageUtility
-} from ".";
+} from "./utilities";
 
 describe("WebStorageUtility", () => {
   it("getStorageName() should give proper values", () => {
