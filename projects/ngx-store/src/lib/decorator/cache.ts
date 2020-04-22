@@ -1,10 +1,10 @@
+import { CacheItemDefinition, UtilityEntry } from './cache-item-definition';
 import { Config, debug } from '../config/config';
+
 import { DecoratorConfig } from '../ngx-store.types';
 import { WebStorageServiceInterface } from '../service/webstorage.interface';
 import { WebStorageUtility } from '../utility/webstorage.utility';
-
-import isEqual from 'lodash.isequal';
-import { UtilityEntry, CacheItemDefinition } from './cache-item-definition';
+import { isEqual } from 'lodash';
 
 export class CacheItem {
     public name: string = '';

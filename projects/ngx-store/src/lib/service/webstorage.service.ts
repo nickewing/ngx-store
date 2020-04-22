@@ -7,7 +7,7 @@ import { NgxStorageEvent } from '../utility/storage/storage-event';
 import { Resource } from './resource';
 import { WebStorageConfigInterface, ClearType } from '../config/config.interface';
 import { Config, debug } from '../config/config';
-import  merge from 'lodash.merge';
+import { merge } from 'lodash';
 
 export abstract class WebStorageService {
     public static keys: Array<string> = [];
