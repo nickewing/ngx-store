@@ -1,9 +1,9 @@
 import { WebStorageService } from './webstorage.service';
-import { localStorageUtility } from '../utility/index';
 import { Injectable } from '@angular/core';
 import { fromEvent, merge } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
 import { NgxStorageEvent } from '../utility/storage/storage-event';
+import { localStorageUtility } from '../utility/utilities';
 
 @Injectable({
   providedIn: "root"

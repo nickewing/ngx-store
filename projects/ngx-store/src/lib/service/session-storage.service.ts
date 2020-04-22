@@ -1,5 +1,5 @@
 import { WebStorageService } from './webstorage.service';
-import { sessionStorageUtility } from '../utility/index';
+import { sessionStorageUtility } from '../utility/utilities';
 import { Injectable } from '@angular/core';
 import { fromEvent, merge } from 'rxjs';
 import { filter, map } from 'rxjs/operators';

@@ -1,5 +1,5 @@
-import { Config } from '../config/index';
 import { WebStorageUtility } from './webstorage.utility';
+import { Config } from '../config/config';
 import { cookiesStorage } from './storage/cookies-storage';
 import { SharedStorageUtility } from './shared-storage.utility';
 import { sharedStorage } from './storage/shared-storage';

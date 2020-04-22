@@ -1,5 +1,5 @@
 import { WebStorageService } from './webstorage.service';
-import { sharedStorageUtility } from '../utility/index';
+import { sharedStorageUtility } from '../utility/utilities';
 import { Injectable } from '@angular/core';
 
 @Injectable({
