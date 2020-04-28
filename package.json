@@ -1,6 +1,6 @@
 {
   "name": "ngx-store",
-  "version": "3.0.3",
+  "version": "3.0.0",
   "description": "Angular decorators to automagically keep variables in HTML5 LocalStorage, SessionStorage, cookies; injectable services for managing and listening to data changes and a bit more.",
   "scripts": {
     "build": "ng build",
@@ -16,15 +16,15 @@
     "build-prod": "ng build --prod"
   },
   "typings": "./ngx-store.d.ts",
-  "author": "Daniel Kucal",
+  "author": "eFaps",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zoomsphere/ngx-store.git"
+    "url": "https://github.com/eFaps/ngx-store.git"
   },
   "bugs": {
-    "url": "https://github.com/zoomsphere/ngx-store/issues"
+    "url": "https://github.com/eFaps/ngx-store/issues"
   },
-  "homepage": "https://github.com/zoomsphere/ngx-store",
+  "homepage": "https://github.com/eFaps/ngx-store",
   "keywords": [
     "Angular9",
     "LocalStorage",

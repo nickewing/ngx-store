@@ -23,6 +23,10 @@ This library adds decorators that make it super easy to *automagically* save and
 - Tests coverage
 
 ## CHANGELOG
+#### v3.0.0 - support for Angular 9
+
+Version from Zoomsphere
+
 #### v2.1.0 - support for Angular 7 & TypeScript 3
 #### v2.0.0 - support for Angular 6 (RxJS v6)
 #### v1.4.x
