@@ -14,7 +14,7 @@ jobs:
       - name: Install
         run: npm install
       - name: Test
-        run: npm run test
+        run: npm run test-CI
       - name: Build
         run: npm run build
       - name: Publish to npm
