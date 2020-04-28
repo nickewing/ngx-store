@@ -1,7 +1,7 @@
-import { Config, debug } from '../../config/index';
 import { NgxStorage } from './storage';
 import { StorageName, WebStorageUtility } from '../webstorage.utility';
 import { interval } from 'rxjs';
+import { Config, debug } from '../../config/config';
 
 export interface WebStorage extends Storage {
    setItem(key: string, data: string, expirationDate?: Date): void;

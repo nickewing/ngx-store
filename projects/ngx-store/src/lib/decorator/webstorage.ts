@@ -1,9 +1,4 @@
-import {
-    CookiesStorageService,
-    LocalStorageService,
-    SessionStorageService,
-    WebStorageServiceInterface
-} from '../service/index';
+
 import { cookiesStorageUtility, localStorageUtility, sessionStorageUtility, sharedStorageUtility } from '../utility/utilities';
 import { SharedStorageService } from '../service/shared-storage.service';
 import { WebStorageUtility } from '../utility/webstorage.utility';
@@ -12,6 +7,10 @@ import {
     CookieStorageDecoratorConfig, DecoratorConfig, LocalStorageDecoratorConfig,
     SessionStorageDecoratorConfig, WebStorageDecoratorConfig
 } from '../ngx-store.types';
+import { LocalStorageService } from '../service/local-storage.service';
+import { SessionStorageService } from '../service/session-storage.service';
+import { CookiesStorageService } from '../service/cookies-storage.service';
+import { WebStorageServiceInterface } from '../service/webstorage.interface';
 
 export function LocalStorage(keyOrConfig?: string | LocalStorageDecoratorConfig,
                              config?: LocalStorageDecoratorConfig) {
