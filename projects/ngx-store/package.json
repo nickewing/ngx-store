@@ -1,16 +1,26 @@
 {
-    "name": "@efaps/ngx-store",
-    "version": "3.0.0",
-    "peerDependencies": {
-        "@angular/common": "^9.1.0",
-        "@angular/core": "^9.1.0",
-        "tslib": "^1.10.0"
-    },
-    "dependencies": {
-        "lodash.get": "^4.4.2",
-        "lodash.isequal": "^4.5.0",
-        "lodash.merge": "^4.6.2",
-        "lodash.set": "^4.3.2",
-        "ts-debug": "^1.3.0"
-    }
+  "name": "@efaps/ngx-store",
+  "version": "3.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eFaps/eFaps-POS-Library.git"
+  },
+  "author": "eFaps",
+  "license": "ISC",
+  "homepage": "https://github.com/eFaps/ngx-store",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@angular/common": "^9.1.0",
+    "@angular/core": "^9.1.0",
+    "tslib": "^1.10.0"
+  },
+  "dependencies": {
+    "lodash.get": "^4.4.2",
+    "lodash.isequal": "^4.5.0",
+    "lodash.merge": "^4.6.2",
+    "lodash.set": "^4.3.2",
+    "ts-debug": "^1.3.0"
+  }
 }
