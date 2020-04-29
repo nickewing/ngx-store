@@ -4,7 +4,9 @@ import { LocalStorageService } from '../service/local-storage.service';
 import { SessionStorageService } from '../service/session-storage.service';
 import { CookiesStorageService } from '../service/cookies-storage.service';
 import { SharedStorageService } from '../service/shared-storage.service';
-import { WebstorableArray, WebstorableObject, WebStorageModule } from 'ngx-store';
+import { WebstorableArray, WebstorableObject } from '../ngx-store.types';
+import { WebStorageModule } from '../ngx-store.module';
+
 
 sessionStorage.setItem('ngx_twoDecorators', '128');
 class TestClass {

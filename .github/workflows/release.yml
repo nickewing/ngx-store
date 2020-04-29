@@ -16,7 +16,7 @@ jobs:
       - name: Test
         run: npm run test-CI
       - name: Build
-        run: npm run build
+        run: npm run build-prod
       - name: Publish to npm
         id: publish
         uses: JS-DevTools/npm-publish@v1
