@@ -2,7 +2,8 @@ import { NgxStorage } from "./storage";
 import { StorageName, WebStorageUtility } from "../webstorage.utility";
 import { interval } from "rxjs";
 import { Config, debug } from "../../config/config";
-import { isPlatformServer } from "@angular/common";
+
+const isBrowser = typeof window !== 'undefined' && typeof window.document !== 'undefined';
 
 export interface WebStorage extends Storage {
   setItem(key: string, data: string, expirationDate?: Date): void;
@@ -42,7 +43,7 @@ export class CookiesStorage extends NgxStorage {
   }
 
   public removeItem(key: string): void {
-    if (isPlatformServer) {
+    if (!isBrowser) {
       return;
     }
     if (typeof document === "undefined") return;
@@ -59,7 +60,7 @@ export class CookiesStorage extends NgxStorage {
    * @param expirationDate passing null affects in lifetime cookie
    */
   public setItem(key: string, value: string, expirationDate?: Date): void {
-    if (isPlatformServer) {
+    if (!isBrowser) {
       return;
     }
     if (typeof document === "undefined") return;
@@ -93,7 +94,7 @@ export class CookiesStorage extends NgxStorage {
 
   // TODO: consider getting cookies from all paths
   protected getAllItems(): Map<string, string> {
-    if (isPlatformServer) {
+    if (!isBrowser) {
       return new Map();
     }
     if (this.cachedCookieString === document.cookie) {
@@ -144,7 +145,7 @@ export class CookiesStorage extends NgxStorage {
    * @param path
    */
   protected resolveDomain(path: string): string {
-    if (isPlatformServer) {
+    if (!isBrowser) {
       return "";
     }
     if (!path) return "";
@@ -161,7 +162,7 @@ export class CookiesStorage extends NgxStorage {
    * @url http://rossscrivener.co.uk/blog/javascript-get-domain-exclude-subdomain
    */
   protected getDomain(): string {
-    if (isPlatformServer) {
+    if (!isBrowser) {
       return "";
     }
     let i = 0;
