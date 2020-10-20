@@ -1,6 +1,6 @@
 {
   "name": "ngx-store",
-  "version": "4.0.5",
+  "version": "4.0.6",
   "description": "Angular decorators to automagically keep variables in HTML5 LocalStorage, SessionStorage, cookies; injectable services for managing and listening to data changes and a bit more.",
   "scripts": {
     "build": "ng build",
