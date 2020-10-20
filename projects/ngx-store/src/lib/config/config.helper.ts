@@ -2,7 +2,7 @@ export const CONFIG_PREFIX = "NGX-STORE_";
 
 export class ConfigHelper {
   public static isLocalStorageSupported() {
-    return (
+    return (typeof window !== 'undefined' &&
       typeof window["localStorage"] != "undefined" &&
       window["localStorage"] != null
     );
