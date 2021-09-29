@@ -8,7 +8,7 @@
       "lodash": "lodash"
     }
   },
-  "whitelistedNonPeerDependencies": [
+  "allowedNonPeerDependencies": [
     "lodash.get",
     "lodash.isequal",
     "lodash.merge",
