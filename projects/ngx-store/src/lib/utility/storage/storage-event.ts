@@ -58,6 +58,6 @@ export class NgxStorageEvent implements StorageEvent {
   }
 
   public get CAPTURING_PHASE() {
-    return StorageEvent.prototype.BUBBLING_PHASE;
+    return StorageEvent.prototype.CAPTURING_PHASE;
   }
 }
