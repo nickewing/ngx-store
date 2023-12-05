@@ -79,7 +79,7 @@
   },
   "//": "\"engineStrict\": false,",
   "engines": {
-    "node": ">= 14",
+    "node": ">= 18",
     "npm": ">= 8"
   }
 }

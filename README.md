@@ -23,6 +23,8 @@ This library adds decorators that make it super easy to *automagically* save and
 - Tests coverage
 
 ## CHANGELOG
+#### v8.0.0 - support for Angular 17
+#### v7.0.0 - support for Angular 16
 #### v6.0.0 - support for Angular 15
 #### v4.0.0 - support for Angular 10
 #### v3.0.0 - support for Angular 9
